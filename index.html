@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- background div -->
+    <div class="bgcontainer"></div>
+    <!-- container -->
+    <div class="container">
+        <!-- audio -->
+        <audio src="" class="audioTag"></audio>
+
+        <!-- about song -->
+        <div class="songDiv">
+            <div class="trackImage"></div>
+            <div class="trackName">Track Name</div>
+            <div class="trackArtist">Track Artist</div>
+        </div>
+
+        <!-- about time -->
+        <div class="timeDiv">
+            <div class="currentDisplay">00:00</div>
+            <div class="totalTimeLength">
+                <div class="currentTime"></div>
+            </div>
+            <div class="totalDisplay">00:00</div>
+        </div>
+
+        <!-- play button -->
+        <div class="buttons">
+            <div class="preButton">
+                <i class="fa-solid fa-backward-step" onclick="previous()"></i>
+            </div>
+            <div class="playPause">
+                <i class="playBtn fa-solid fa-circle-play fa-2x" onclick="playSong()"></i>
+                <i class="pauseBtn fa-solid fa-circle-pause fa-2x hidden" onclick="pauseSong()"></i>
+            </div>
+            <div class="nextButton">
+                <i class="fa-solid fa-forward-step" onclick="next()"></i>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+
+</html>
