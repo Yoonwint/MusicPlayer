@@ -177,3 +177,15 @@ i {
 .hidden {
     display: none;
 }
+
+/* media query */
+@media screen and (max-width: 768px) {
+    .timeDiv {
+        width: 350px;
+    
+    }
+    .currentDisplay,
+    .totalDisplay {     
+    font-size: 20px;
+    }   
+}
